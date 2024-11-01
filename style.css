@@ -1,0 +1,216 @@
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.dl_dl .dl-banner {
+}
+
+.dl_dl .dl-banner .banner-slider {
+}
+
+.dl_dl .dl-banner .banner-slider .slick-prev {
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  /* background: #070b1a; */
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.dl_dl .dl-banner .banner-slider .slick-next {
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 100%;
+  z-index: 1;
+}
+
+.dl_dl .dl-banner .banner-slider .slick-prev::before {
+  color: #fff;
+  font-weight: bold;
+  opacity: 1;
+  content: url('./imgs/arrowLeft.svg');
+}
+
+.dl_dl .dl-banner .banner-slider .slick-next::before {
+  color: #fff;
+  font-weight: bold;
+  opacity: 1;
+  content: url('./imgs/arrowRight.svg');
+}
+
+.dl_dl .dl-white {
+  background-color: white;
+  z-index: 2;
+  position: relative;
+}
+
+.dl_dl .dl-white > section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.dl_dl .dl-white .dl-choose {
+}
+
+.dl_dl .dl-white .dl-wrapper {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dl_dl .dl-white .dl-choose .dl-body {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.dl_dl .dl-row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.dl_dl .dl-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.dl_dl .dl-white .dl-choose .dl-content,
+.dl_dl .dl-white .dl-choose .dl-imgs {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.dl_dl .dl-white .dl-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #243783;
+}
+
+.dl_dl .dl-white .dl-title span {
+  color: #e64d4e;
+}
+
+.dl_dl .dl-white .dl-choose .dl-title {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.dl_dl .dl-white .dl-choose .dl-bg {
+  background-image: url(./imgs/bg1.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dl_dl .dl-choose .dl-imgs {
+  position: relative;
+  z-index: 1;
+  width: 114%;
+}
+
+.dl_dl .dl-choose .dl-img {
+  /* position: absolute; */
+  bottom: 10%;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.dl_dl .dl-choose .dl-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.dl_dl .dl-choose .dl-list {
+  background: #ffffff;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  border-radius: 24px;
+  box-shadow: 258px 152px 120px rgba(0, 0, 0, 0.01),
+    145px 86px 101px rgba(0, 0, 0, 0.05), 64px 38px 75px rgba(0, 0, 0, 0.09),
+    16px 10px 41px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 32px 24px;
+}
+
+.dl_dl .dl-choose .dl-list svg {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 40px);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  transform-origin: top right;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+  animation-name: arrow;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+  .dl_dl .dl-white .dl-wrapper {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dl_dl .dl-white .dl-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dl_dl .dl-white .dl-wrapper {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200) {
+  .dl_dl .dl-white .dl-wrapper {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400) {
+  .dl_dl .dl-white .dl-wrapper {
+    max-width: 1200px;
+  }
+}
+
+/* ANIMATION */
+
+@keyframes arrow {
+  0% {
+    transform: rotate(-10deg) translate(5px, 5px);
+  }
+  100% {
+    transform: rotate(0) translate(0);
+  }
+}
