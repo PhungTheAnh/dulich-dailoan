@@ -570,6 +570,38 @@ h6 {
   color: #787878;
   transition: all 0.5s;
 }
+
+/*  */
+
+.dl_dl .dl-footer {
+  background: #243783;
+  color: #fefefee6;
+  position: relative;
+  z-index: 2;
+}
+
+.dl_dl .dl-footer .dl-a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dl_dl .dl-footer .dl-a img {
+  max-height: 60px;
+}
+
+.dl_dl .dl-footer .footer-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.dl_dl .dl-footer a {
+  color: #fefefee6;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {
