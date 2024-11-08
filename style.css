@@ -58,6 +58,10 @@ h6 {
   flex-direction: row-reverse;
 }
 
+.dl_dl {
+  overflow: hidden;
+}
+
 .dl_dl .dl-banner {
 }
 
@@ -269,7 +273,7 @@ h6 {
   width: 120%;
 }
 
-.dl_dl .dl-white .dl-bg .img {
+.dl_dl .dl-white .dl-bg img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -452,6 +456,120 @@ h6 {
   font-size: 18px;
 }
 
+.dl_dl .dl-feel .dl-wrapper {
+  position: relative;
+  z-index: 1;
+}
+/*  */
+.dl_dl .dl-register {
+  background-image: url(./imgs/Artboard-2-2.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 40px 0;
+}
+
+.dl_dl .dl-register .dl-title {
+  margin: 0 auto 40px;
+  max-width: 732px;
+}
+
+.dl_dl .dl-register .dl-form {
+  background: #ffffff;
+  border: 1px solid #67a0a74d;
+  position: relative;
+  box-shadow: 0px 293px 117px #ababab03, 0px 165px 99px #ababab0d,
+    0px 73px 73px #ababab17, 0px 18px 40px #ababab1a, 0px 0px 0px #ababab1a;
+  padding: 48px;
+  max-width: 732px;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+.dl_dl .dl-register .dl-form svg {
+  position: absolute;
+  left: calc(100% - 25px);
+  bottom: calc(100% - 15px);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  transform-origin: top right;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+  animation-name: arrow;
+}
+
+.dl_dl .dl-register .dl-form form {
+  padding: 5px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.dl_dl .dl-register .dl-form form .form-ips {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -12px;
+}
+
+.dl_dl .dl-register .dl-form form .form-ip {
+  padding: 12px;
+  width: 50%;
+}
+
+.dl_dl .dl-register .dl-form form .form-ip input {
+  width: 100%;
+  height: auto;
+  vertical-align: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 12px;
+  outline: none;
+}
+
+.dl_dl .dl-register .dl-form form input:not([type='button']) {
+  background: #f7f7f7;
+  border: 1px solid #c4c4c4;
+  border-radius: 0;
+  box-shadow: none;
+  color: #787878;
+  transition: all 0.5s;
+}
+
+.dl_dl .dl-register .dl-form form input:not([type='submit']) {
+  background: #f1f1f1 !important;
+  border: 1px solid #dfdfdf !important;
+  border-radius: 8px !important;
+  height: 52px !important;
+}
+
+.dl_dl .dl-register .dl-form form .form-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  width: 50%;
+}
+
+.dl_dl .dl-register .dl-form form .form-submit input {
+  background: #e64d4e;
+  box-shadow: 32px 57px 26px #e64d4e03, 18px 32px 22px #e64d4e0d,
+    8px 14px 16px #e64d4e17, 2px 4px 9px #e64d4e1a, 0px 0px 0px #e64d4e1a;
+  font-weight: 800;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 18px 15px;
+  width: 100%;
+  line-height: normal;
+  text-transform: uppercase;
+  height: auto;
+  border-radius: 40px;
+}
+
+.dl_dl .dl-register .dl-form form .form-submit input:hover {
+  background: #c4c4c4;
+  color: #787878;
+  transition: all 0.5s;
+}
 /* RESPONSIVE */
 
 @media screen and (min-width: 576px) {
@@ -524,6 +642,22 @@ h6 {
   .dl_dl .slick-prev,
   .dl_dl .slick-next {
     opacity: 0.3;
+  }
+
+  .dl_dl .dl-register .dl-form {
+    padding: 48px 16px 16px;
+  }
+
+  .dl_dl .dl-register .dl-form svg {
+    left: unset;
+    height: 110px;
+    bottom: unset;
+    top: -60px;
+    right: 0;
+  }
+
+  .dl_dl .dl-register .dl-form form .form-ip {
+    width: 100%;
   }
 }
 
