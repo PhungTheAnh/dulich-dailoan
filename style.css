@@ -600,6 +600,12 @@ h6 {
 
 .dl_dl .dl-footer a {
   color: #fefefee6;
+  text-align: center;
+  padding: 18px 0 23px;
+}
+
+.dl_dl .dl-footer .dl-wrapper .row {
+  padding-bottom: 24px;
 }
 
 /* RESPONSIVE */
