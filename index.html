@@ -580,6 +580,61 @@
                     </div>
                 </div>
             </section>
+            <section class='dl-question'>
+                <div class='dl-wrapper'>
+                    <div class="dl-title">
+                        Có phải bạn đang thắc mắc?
+                    </div>
+                    <div class='dl-collapse'>
+                        <div class="dl-item" data-item="0">
+                            <div class="item-label">
+                                <span>Du học Đài Loan có đắt không? </span>
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.866699 14.3996L7.2667 7.99961L0.866699 1.59961" stroke="black"
+                                        stroke-linecap="square"></path>
+                                </svg>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-content">
+                                    <p><span style="font-weight: 400;">So với các nước phương Tây hay thậm chí so với
+                                            Nhật, Hàn, Singapore thì chi phí du học Đài Loan rẻ hơn nhiều. Các trường
+                                            đều có học bổng/hỗ trợ tài chính cho sinh viên học hệ vừa học vừa làm và hệ
+                                            1+4, thêm nữa, trong quá trình học sinh viên được đi làm thêm, thực tập có
+                                            lương, những khoản thu nhập này giúp sinh viên thoải mái sinh hoạt tại xứ
+                                            Đài mà không phải phụ thuộc gia đình.</span></p>
+                                    <p>Tại EduCom, vào các đợt có chương trình Khuyến mãi, chỉ với 45.000.000 VNĐ trọn
+                                        gói, học viên đã sẵn sàng đến Đài Loan học tập và sinh sống</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dl-item" data-item="1">
+                            <div class="item-label">
+                                <span>Du học Đài Loan có đắt không? </span>
+                                <svg width="8" height="16" viewBox="0 0 8 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.866699 14.3996L7.2667 7.99961L0.866699 1.59961" stroke="black"
+                                        stroke-linecap="square"></path>
+                                </svg>
+                            </div>
+                            <div class="item-text">
+                                <div class="item-content">
+                                    <p><span style="font-weight: 400;">So với các nước phương Tây hay thậm chí so với
+                                            Nhật, Hàn, Singapore thì chi phí du học Đài Loan rẻ hơn nhiều. Các trường
+                                            đều có học bổng/hỗ trợ tài chính cho sinh viên học hệ vừa học vừa làm và hệ
+                                            1+4, thêm nữa, trong quá trình học sinh viên được đi làm thêm, thực tập có
+                                            lương, những khoản thu nhập này giúp sinh viên thoải mái sinh hoạt tại xứ
+                                            Đài mà không phải phụ thuộc gia đình.</span></p>
+                                    <p>Tại EduCom, vào các đợt có chương trình Khuyến mãi, chỉ với 45.000.000 VNĐ trọn
+                                        gói, học viên đã sẵn sàng đến Đài Loan học tập và sinh sống</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
             <footer class='dl-footer'>
                 <a class='dl-a' href="https://educom.edu.vn"
                     title="Du học EduCom – Tổ chức Giáo dục uy tín hàng đầu Việt Nam"><img
@@ -648,6 +703,19 @@
             slidesToShow: 1,
             arrows: true,
         });
+
+        const items = document.querySelectorAll(".dl-question .dl-item")
+        items.forEach((item, index) => {
+            const dlText = item.querySelector('.item-text');
+            item.addEventListener("click", (e) => {
+                if (index == item.getAttribute("data-item")) {
+                    item.classList.toggle("active")
+                    dlText.classList.toggle("active")
+                }
+            })
+
+        })
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

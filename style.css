@@ -571,7 +571,70 @@ h6 {
   transition: all 0.5s;
 }
 
-/*  */
+/* question */
+
+.dl_dl .dl-question {
+  background: #b0d9dc26;
+}
+
+.dl_dl .dl-question .dl-title {
+  margin-bottom: 16px;
+}
+
+.dl_dl .dl-question .dl-collapse {
+  max-width: 1076px;
+  margin: 0 auto;
+}
+
+.dl_dl .dl-question .dl-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.dl_dl .dl-question .dl-item .item-label {
+  background: #ffffff;
+  border: 1px solid #d7e8ea;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dl_dl .dl-question .dl-item {
+  border-radius: 8px;
+  background: #67a0a733;
+}
+
+.dl_dl .dl-question .dl-item .item-label {
+  font-size: 16px;
+}
+
+.dl_dl .dl-question .dl-item .item-text {
+  padding: 16px;
+  font-size: 16px;
+  max-height: 0;
+  display: none;
+}
+
+.dl_dl .dl-question .dl-item.active .item-label svg {
+  transform: rotate(90deg);
+}
+
+.dl_dl .dl-question .dl-item.active .item-label svg path {
+  stroke: #e64d4e;
+}
+
+.dl_dl .dl-question .dl-item .item-text.active {
+  display: block;
+  overflow: hidden;
+  max-height: 100%;
+  transition: ease-in-out max-height 1s;
+}
+
+/* footer */
 
 .dl_dl .dl-footer {
   background: #243783;
@@ -717,6 +780,10 @@ h6 {
 
   .dl_dl .dl-register .dl-form form .form-ip {
     width: 100%;
+  }
+
+  .dl_dl .dl-question .dl-title {
+    font-size: 24px;
   }
 }
 
